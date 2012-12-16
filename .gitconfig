@@ -1,18 +1,20 @@
 [core]
-	autocrlf = false
-	filemode = false
-	ignorecase = true
-
+    autocrlf = false
+    eol = lf
+    filemode = false
+    ignorecase = true
+    excludesfile = ~/.gitignore_global
 [color]
-	branch = auto
-	diff = auto
-	interactive = auto
-	status = auto
-
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = true
 [alias]
-	lg = log --decorate
-	st = status -sb
-	wd = diff --word-diff
-
+    co = checkout
+    ci = commit
+    st = status -sb
+    br = branch -a
+    lg = log --decorate
+    wd = diff --word-diff
 [include]
-	path = 
+    path = ~/.gitconfig_private
