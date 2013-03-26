@@ -15,6 +15,7 @@
     st = status -sb
     br = branch -a
     lg = log --decorate
+    ll = log --oneline --all --graph --decorate
     wd = diff --word-diff
 [include]
     path = ~/.gitconfig_private
