@@ -16,6 +16,11 @@
     br = branch -a
     lg = log --decorate
     ll = log --oneline --all --graph --decorate
+    today = log --since yesterday
     wd = diff --word-diff
+    purr = pull --rebase
+    pupp = pull --prune
+    unstash = stash pop
+    ready = diff --check
 [include]
     path = ~/.gitconfig_private
