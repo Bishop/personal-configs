@@ -18,6 +18,7 @@
     ll = log --oneline --all --graph --decorate
     today = log --since yesterday
     wd = diff --word-diff
+    difff = diff HEAD
     purr = pull --rebase
     pupp = pull --prune
     unstash = stash pop
