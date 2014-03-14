@@ -19,8 +19,7 @@
     today = log --since yesterday
     wd = diff --word-diff
     difff = diff HEAD
-    purr = pull --rebase
-    pupp = pull --prune
+    purr = pull --rebase --prune
     unstash = stash pop
     ready = diff --check
 [include]
