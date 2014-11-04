@@ -2,3 +2,6 @@
 *.swp
 .DS_Store
 /.sass-cache
+
+.ruby-version
+.ruby-gemset
