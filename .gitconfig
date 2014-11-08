@@ -14,6 +14,8 @@
     ci = commit
     st = status -sb
     br = branch -a
+    del = branch -d
+    delete = branch -D
     lg = log --decorate
     ll = log --oneline --all --graph --decorate
     today = log --since yesterday
@@ -21,6 +23,8 @@
     difff = diff HEAD
     up = pull --rebase --prune
     get = fetch --prune
+    getall = remote update --prune
+    follow = merge upstream/master
     unstash = stash pop
     ready = diff --check
 [include]
