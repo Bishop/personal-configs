@@ -20,4 +20,8 @@ function title {
       printf "\033]0;%s\007" "$1"
 }
 
+function deploy {
+    bundle exec cap $1 deploy
+}
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
