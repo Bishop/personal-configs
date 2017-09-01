@@ -3,7 +3,7 @@ export LC_ALL=en_US.UTF-8
 # Set a default prompt of: user@host and current_directory
 PS1='\[\e]0;\W\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ '
 
-alias ll='ls -al'
+alias ll='ls -Al'
 alias la='ls -A'
 alias l='ls -CF'
 
