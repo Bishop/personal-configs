@@ -20,28 +20,14 @@ endif
 
 set showtabline=2
 
-" V U N D L E
-
-set nocompatible  " be iMproved
-filetype off
-
-set rtp+=$VIM/bundle/vundle/
-call vundle#rc('$VIM/bundle')
-
-Bundle 'gmarik/vundle'
-Bundle 'molokai'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-
 filetype plugin indent on
 
 syntax on
-colorscheme molokai
 set showmatch
 
 " S E A R C H
 
-set hlsearch smartcase ignorecase incsearch 
+set hlsearch smartcase ignorecase incsearch
 
 set backspace=indent,eol,start
 
@@ -52,6 +38,4 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set smartindent smarttab
-  
-
 
