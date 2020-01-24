@@ -7,36 +7,20 @@ alias ll='ls -Al'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias st='open -a Sublime\ Text'
-alias atom='open -a Atom'
-
-function psc {
-	if [ -z "$1" ]
-	then
-	  ps axo pid,ppid,user,command
-	else
-	  ps axo pid,ppid,user,command | grep "$1" | grep -v "grep $1" | grep -v "bin/psc"
-	fi
-}
-
-function title {
-      printf "\033]0;%s\007" "$1"
-}
-
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
-
 # curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash 
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
 complete -F _ssh pcap
 
-PATH=/usr/local/sbin:$PATH
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 
-# G O
-PATH=$PATH:$HOME/.Go/bin
-export GOPATH=~/.Go
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
