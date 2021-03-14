@@ -27,6 +27,8 @@
     follow = merge upstream/master
     unstash = stash pop
     ready = diff --check
+    pub = push --recurse-submodules=on-demand
+    sup = submodule update --remote --merge
 [include]
     path = ~/.gitconfig_private
 [push]
